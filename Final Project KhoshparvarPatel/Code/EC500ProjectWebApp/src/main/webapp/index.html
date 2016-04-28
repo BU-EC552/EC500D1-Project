@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enhanced BLAT</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <form action="./results" method="POST" id="mainForm">
+            <fieldset>
+                <legend>EC500D1 Project: Enhanced BLAT Search Genome</legend>
+                <table border="0" width="80">
+                    <tbody><tr>
+
+                            <td align="CENTER">Genome:</td><td align="CENTER">Assembly:</td><td align="CENTER">Query type:</td><td align="CENTER">Sort output:</td><td align="CENTER">Output type:</td><td align="CENTER">&nbsp;</td></tr>
+                        <tr>
+                            <td align="CENTER">
+                                <select name="org" form="mainForm">
+                                    <option value="Human">Human</option>
+                                    <option selected="" value="Mouse">Mouse</option>
+                                    <option value="A. gambiae">A. gambiae</option>
+                                    <option value="A. mellifera">A. mellifera</option>
+                                    <option value="Alpaca">Alpaca</option>
+                                    <option value="American alligator">American alligator</option>
+                                    <option value="Armadillo">Armadillo</option>
+                                    <option value="Atlantic cod">Atlantic cod</option>
+                                    <option value="Baboon">Baboon</option>
+                                    <option value="Bonobo">Bonobo</option>
+                                    <option value="Brown kiwi">Brown kiwi</option>
+                                    <option value="Budgerigar">Budgerigar</option>
+                                    <option value="Bushbaby">Bushbaby</option>
+                                    <option value="C. brenneri">C. brenneri</option>
+                                    <option value="C. briggsae">C. briggsae</option>
+                                    <option value="C. elegans">C. elegans</option>
+                                    <option value="C. intestinalis">C. intestinalis</option>
+                                    <option value="C. japonica">C. japonica</option>
+                                    <option value="C. remanei">C. remanei</option>
+                                    <option value="Cat">Cat</option>
+                                    <option value="Chicken">Chicken</option>
+                                    <option value="Chimp">Chimp</option>
+                                    <option value="Chinese hamster">Chinese hamster</option>
+                                    <option value="Coelacanth">Coelacanth</option>
+                                    <option value="Cow">Cow</option>
+                                    <option value="Crab-eating macaque">Crab-eating macaque</option>
+                                    <option value="D. ananassae">D. ananassae</option>
+                                    <option value="D. erecta">D. erecta</option>
+                                    <option value="D. grimshawi">D. grimshawi</option>
+                                    <option value="D. melanogaster">D. melanogaster</option>
+                                    <option value="D. mojavensis">D. mojavensis</option>
+                                    <option value="D. persimilis">D. persimilis</option>
+                                    <option value="D. pseudoobscura">D. pseudoobscura</option>
+                                    <option value="D. sechellia">D. sechellia</option>
+                                    <option value="D. simulans">D. simulans</option>
+                                    <option value="D. virilis">D. virilis</option>
+                                    <option value="D. yakuba">D. yakuba</option>
+                                    <option value="Dog">Dog</option>
+                                    <option value="Dolphin">Dolphin</option>
+                                    <option value="Ebola virus">Ebola virus</option>
+                                    <option value="Elephant">Elephant</option>
+                                    <option value="Elephant shark">Elephant shark</option>
+                                    <option value="Ferret ">Ferret </option>
+                                    <option value="Fugu">Fugu</option>
+                                    <option value="Gibbon">Gibbon</option>
+                                    <option value="Gorilla">Gorilla</option>
+                                    <option value="Guinea pig">Guinea pig</option>
+                                    <option value="Hedgehog">Hedgehog</option>
+                                    <option value="Horse">Horse</option>
+                                    <option value="Kangaroo rat">Kangaroo rat</option>
+                                    <option value="Lamprey">Lamprey</option>
+                                    <option value="Lancelet">Lancelet</option>
+                                    <option value="Lizard">Lizard</option>
+                                    <option value="Manatee">Manatee</option>
+                                    <option value="Marmoset">Marmoset</option>
+                                    <option value="Medaka">Medaka</option>
+                                    <option value="Medium ground finch">Medium ground finch</option>
+                                    <option value="Megabat">Megabat</option>
+                                    <option value="Microbat">Microbat</option>
+                                    <option value="Minke whale">Minke whale</option>
+                                    <option value="Mouse lemur">Mouse lemur</option>
+                                    <option value="Naked mole-rat">Naked mole-rat</option>
+                                    <option value="Nile tilapia">Nile tilapia</option>
+                                    <option value="Opossum">Opossum</option>
+                                    <option value="Orangutan">Orangutan</option>
+                                    <option value="P. pacificus">P. pacificus</option>
+                                    <option value="Painted turtle">Painted turtle</option>
+                                    <option value="Panda">Panda</option>
+                                    <option value="Pig">Pig</option>
+                                    <option value="Pika">Pika</option>
+                                    <option value="Platypus">Platypus</option>
+                                    <option value="Rabbit">Rabbit</option>
+                                    <option value="Rat">Rat</option>
+                                    <option value="Rhesus">Rhesus</option>
+                                    <option value="Rock hyrax">Rock hyrax</option>
+                                    <option value="S. cerevisiae">S. cerevisiae</option>
+                                    <option value="S. purpuratus">S. purpuratus</option>
+                                    <option value="Sea hare">Sea hare</option>
+                                    <option value="Sheep">Sheep</option>
+                                    <option value="Shrew">Shrew</option>
+                                    <option value="Sloth">Sloth</option>
+                                    <option value="Squirrel">Squirrel</option>
+                                    <option value="Squirrel monkey">Squirrel monkey</option>
+                                    <option value="Stickleback">Stickleback</option>
+                                    <option value="Tarsier">Tarsier</option>
+                                    <option value="Tasmanian devil">Tasmanian devil</option>
+                                    <option value="Tenrec">Tenrec</option>
+                                    <option value="Tetraodon">Tetraodon</option>
+                                    <option value="Tree shrew">Tree shrew</option>
+                                    <option value="Turkey">Turkey</option>
+                                    <option value="Wallaby">Wallaby</option>
+                                    <option value="White rhinoceros">White rhinoceros</option>
+                                    <option value="X. tropicalis">X. tropicalis</option>
+                                    <option value="Zebra finch">Zebra finch</option>
+                                    <option value="Zebrafish">Zebrafish</option>
+                                </select>
+                            </td>
+                            <td align="CENTER">
+                                <select name="db" form="mainForm">
+                                    <option selected="" value="mm10">Dec. 2011 (GRCm38/mm10)</option>
+                                    <option value="mm9">July 2007 (NCBI37/mm9)</option>
+                                    <option value="mm8">Feb. 2006 (NCBI36/mm8)</option>
+                                    <option value="mm7">Aug. 2005 (NCBI35/mm7)</option>
+                                </select>
+                            </td>
+                            <td align="CENTER">
+                                <select name="type" class="normalText" form="mainForm">
+                                    <option selected="">BLAT's guess</option>
+                                    <option>DNA</option>
+                                    <option>protein</option>
+                                    <option>translated RNA</option>
+                                    <option>translated DNA</option>
+                                </select>
+                            </td>
+                            <td align="CENTER">
+                                <select name="sort" class="normalText" form="mainForm">
+                                    <option selected="">query,score</option>
+                                    <option>query,start</option>
+                                    <option>chrom,score</option>
+                                    <option>chrom,start</option>
+                                    <option>score</option>
+                                </select>
+                            </td>
+                            <td align="CENTER">
+                                <select name="output" class="normalText" form="mainForm">
+                                    <option selected="">hyperlink</option>
+                                    <option>psl</option>
+                                    <option>psl no header</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" align="CENTER">
+                                Sequence: <br> 
+                                <textarea name="userSeq" rows="1" cols="80" form="mainForm">atggcttgatcaatgggact</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" align="CENTER">
+                                Expansions: <br>
+                                <input type="text" name="seqExpansion" form="mainForm" value="10,5,2">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" align="CENTER">
+                                <input type="SUBMIT" name="Submit" value="submit">
+                            </td>
+                        </tr>
+                </table>
+            </fieldset>
+        </form>
+
+
+    </body>
+</html>
