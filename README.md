@@ -11,6 +11,7 @@ This project enhances BLAT towards performing batch queries without the need for
 The code in this repository consists of two different implementations of Enhanced BLAT. One is an integrated servlet based web application, and the other a CommandLine based application to be integrated into OWL Ecosystem. In the web based implementation, all attempts have been made for the user to have the same experience as BLAT, only with added functionality.
 
 An example use of the CommandLine version come as follows. This example queries the sequences "atggcttgatcaatgggact" and "tatccttgctgtaactgcaa". As this example shows, the character '>' is the separation character for different jobs. All other characters other than alphabetic letters are ignored.
+
 java -jar EC500ProjectCommandline-1.0-SNAPSHOT-jar-with-dependencies.jar -q "atggcttgatcaatgggact>tatccttgctgtaactgcaa"
 
 The CommandLine implementation on the other hand is built in a way to be easily integrated into OWL which is a Node.js application. To that end, all the results are parsed into JSON format and saved for any further use by OWL. Results are saved in the file ./output/EnhancedBLAT.json. Node.js code is also available in the repository under EC500ProjectNode folder which is ready to be integrated into OWL or any other Node.js based application. 
